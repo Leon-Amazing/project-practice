@@ -1,0 +1,1 @@
+function r(e=300){return new Promise(t=>{setTimeout(()=>{t(e)},e)})}function u(e){let t=!1;return function(...n){t||(t=!0,window.requestAnimationFrame(()=>{e.apply(this,n),t=!1}))}}function o(e,t=300){let n=null;return function(...i){n&&clearTimeout(n),n=setTimeout(()=>{e.apply(this,i)},t)}}export{o as a,r as d,u as t};
