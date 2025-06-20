@@ -1,0 +1,47 @@
+{
+  "name": "cty-cms",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:bd": "vite --mode bd",
+    "dev:qa": "vite --mode qa",
+    "dev:tp": "vite --mode tp",
+    "dev:live": "vite --mode production",
+    "build": "vue-tsc && vite build",
+    "build:bd": "vue-tsc && vite build --mode bd",
+    "build:qa": "vue-tsc && vite build --mode qa",
+    "build:tp": "vue-tsc && vite build --mode tp",
+    "preview": "vite preview",
+    "deploy": "sh deploy.sh"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.3.1",
+    "axios": "^1.9.0",
+    "cty-cms-ui": "^1.0.13",
+    "dayjs": "^1.11.13",
+    "echarts": "^5.6.0",
+    "element-plus": "^2.9.11",
+    "js-cookie": "^3.0.5",
+    "mockjs": "^1.1.0",
+    "nprogress": "^0.2.0",
+    "pinia": "^3.0.2",
+    "pinia-plugin-persistedstate": "^4.3.0",
+    "sass": "^1.89.1",
+    "screenfull": "^6.0.2",
+    "vue": "^3.5.16",
+    "vue-i18n": "^11.1.5",
+    "vue-router": "^4.5.1",
+    "vue3-seamless-scroll": "2.0.1"
+  },
+  "devDependencies": {
+    "@types/mockjs": "^1.0.10",
+    "@types/node": "^22.15.29",
+    "@vitejs/plugin-vue": "^5.2.4",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vue-tsc": "^2.2.10"
+  }
+}

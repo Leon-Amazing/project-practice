@@ -1,0 +1,100 @@
+// 通用样式表
+.hy-wrapper {
+  padding: 20px;
+  background-color: var(--el-bg-color);
+  border-radius: 6px;
+  height: 100%;
+  .hy-main {
+    padding: 0;
+  }
+}
+
+.cty-side-bar {
+  background: linear-gradient(120deg, #295fa1 0%, #4f5bd5 100%);
+}
+
+.cty-side-bar.is-collapse {
+  .el-menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .el-menu .el-sub-menu .el-sub-menu__title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cty-title {
+  color: #ffffff;
+}
+
+.el-menu {
+  background-color: transparent;
+  --el-menu-hover-bg-color: rgb(232, 241, 252, 0.2);
+  --el-menu-text-color: #ffffff;
+  --el-menu-hover-text-color: #ffffff;
+  padding: 0 8px;
+  .el-menu-item {
+    --el-menu-item-height: 40px;
+    --el-menu-sub-item-height: 40px;
+    --el-menu-level-padding: 24px;
+    margin-top: 10px;
+    border-radius: 4px;
+  }
+  .el-sub-menu {
+    --el-menu-item-height: 40px;
+    margin-top: 10px;
+    .el-sub-menu__title {
+      --el-menu-text-color: #ffffff;
+      margin-top: 10px;
+      border-radius: 4px;
+    }
+    .el-menu-item {
+      .cty-icon {
+        display: none;
+      }
+    }
+  }
+}
+
+.el-menu.el-menu--popup {
+  --el-menu-text-color: #333333;
+  --el-menu-hover-text-color: #333333;
+  .el-sub-menu {
+    .el-sub-menu__title {
+      --el-menu-text-color: #333333;
+    }
+  }
+  .el-menu-item {
+    justify-content: center;
+  }
+}
+
+// tabs
+.cty-tabs__label {
+  .cty-icon {
+    display: none;
+  }
+}
+.cty-tabs-content--smooth .el-tabs__header .el-tabs__item.is-active {
+  .cty-tabs__label {
+    position: relative;
+    &::after {
+      content: '';
+      width: 20px;
+      height: 3px;
+      background: #3281f7;
+      border-radius: 2px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 0;
+    }
+  }
+}
+
+.cty-header__avatar {
+  outline: none;
+}
