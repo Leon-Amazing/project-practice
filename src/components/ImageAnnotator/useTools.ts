@@ -1,15 +1,16 @@
+import { getImgUrl } from '@/utils/utils';
 import { DrawMode } from './types';
 
 export const useTools = () => {
   // 工具栏
   const tools: { value: DrawMode; label: string; icon: string; activeIcon: string }[] = [
-    { value: 'select', label: '选择', icon: '/images/select.png', activeIcon: '/images/select_active.png' },
-    { value: 'rotate', label: '旋转', icon: '/images/rotate.png', activeIcon: '/images/rotate_active.png' },
-    { value: 'sam', label: '智能标注', icon: '/images/magic.png', activeIcon: '/images/magic_active.png' },
-    { value: 'ai', label: 'AI', icon: '/images/ai.png', activeIcon: '/images/ai_active.png' },
-    { value: 'rect', label: '矩形', icon: '/images/rectangle.png', activeIcon: '/images/rectangle_active.png' },
-    { value: 'polygon', label: '多边形', icon: '/images/polygon.png', activeIcon: '/images/polygon_active.png' },
-    { value: 'point', label: '点', icon: '/images/dot.png', activeIcon: '/images/dot_active.png' },
+    { value: 'select', label: '选择', icon: getImgUrl('/images/select.png'), activeIcon: getImgUrl('/images/select_active.png') },
+    { value: 'rotate', label: '旋转', icon: getImgUrl('/images/rotate.png'), activeIcon: getImgUrl('/images/rotate_active.png') },
+    { value: 'sam', label: '智能标注', icon: getImgUrl('/images/magic.png'), activeIcon: getImgUrl('/images/magic_active.png') },
+    { value: 'ai', label: 'AI', icon: getImgUrl('/images/ai.png'), activeIcon: getImgUrl('/images/ai_active.png') },
+    { value: 'rect', label: '矩形', icon: getImgUrl('/images/rectangle.png'), activeIcon: getImgUrl('/images/rectangle_active.png') },
+    { value: 'polygon', label: '多边形', icon: getImgUrl('/images/polygon.png'), activeIcon: getImgUrl('/images/polygon_active.png') },
+    { value: 'point', label: '点', icon: getImgUrl('/images/dot.png'), activeIcon: getImgUrl('/images/dot_active.png') },
   ];
 
   // 颜色辅助

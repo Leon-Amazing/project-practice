@@ -85,3 +85,9 @@ export function rotateGeoJSON(geojson, angle, center) {
   });
   return data;
 }
+
+// 处理图片地址
+export function getImgUrl(url: string) {
+  const { BASE_URL, PROD } = import.meta.env;
+  return PROD ? BASE_URL + url : url;
+}

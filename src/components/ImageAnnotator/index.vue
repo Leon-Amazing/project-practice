@@ -380,10 +380,10 @@
                     }
                   }
                 ">
-                <img :src="ann.locked ? '/images/lock.png' : '/images/unlock.png'" />
+                <img :src="ann.locked ? getImgUrl('/images/lock.png') : getImgUrl('/images/unlock.png')" />
               </div>
               <div class="ann-actions-item" :class="{ active: ann.hidden }" @click.stop="toggleVisibility(ann.id)">
-                <img :src="ann.hidden ? '/images/eye_close.png' : '/images/eye_open.png'" />
+                <img :src="ann.hidden ? getImgUrl('/images/eye_close.png') : getImgUrl('/images/eye_open.png')" />
               </div>
               <div
                 class="ann-actions-item"
@@ -395,7 +395,7 @@
                     }
                   }
                 ">
-                <img :src="ann.fixed ? '/images/fixed2.png' : '/images/fixed1.png'" />
+                <img :src="ann.fixed ? getImgUrl('/images/fixed2.png') : getImgUrl('/images/fixed1.png')" />
               </div>
             </div>
           </div>
@@ -408,6 +408,7 @@
 
 <script setup lang="ts">
 import { ref, computed, onMounted } from 'vue';
+import { getImgUrl } from '@/utils/utils';
 import { useAnnotation } from './useAnnotation';
 import type { DrawMode } from './types';
 
