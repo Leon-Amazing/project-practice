@@ -8,6 +8,7 @@ import router, { setupRouter } from './router';
 import { setupStore } from './store';
 import CtyCmsUI from 'cty-cms-ui';
 import * as ElementPlusIconsVue from '@element-plus/icons-vue';
+import VueKonva from 'vue-konva';
 import { initApi } from './api';
 import { setupI18n } from './lang';
 import 'dayjs/locale/zh-cn';
@@ -27,6 +28,7 @@ setupRouter(app);
 setupI18n(app);
 app.use(ElementPlus);
 app.use(CtyCmsUI);
+app.use(VueKonva);
 router.isReady().then(() => {
   app.mount('#app');
 });

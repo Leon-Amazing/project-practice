@@ -142,6 +142,21 @@ export const asyncRoutes = [
     redirect: null,
     isFolder: false,
   },
+  {
+    title: '图片标注',
+    icon: 'Picture',
+    action: 'imageAnnotation',
+    hasChildren: false,
+    actionType: 'route',
+    file_path: '/pages/imageAnnotation/index',
+    badge: null,
+    dot: false,
+    hidden: false,
+    _fixed: false,
+    no_cache: false,
+    redirect: null,
+    isFolder: false,
+  },
 ];
 
 const router = createRouter({

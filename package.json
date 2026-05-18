@@ -24,6 +24,7 @@
     "echarts": "^5.6.0",
     "element-plus": "^2.9.11",
     "js-cookie": "^3.0.5",
+    "konva": "^10.3.0",
     "mockjs": "^1.1.0",
     "nprogress": "^0.2.0",
     "pinia": "^3.0.2",
@@ -32,6 +33,7 @@
     "screenfull": "^6.0.2",
     "vue": "^3.5.16",
     "vue-i18n": "^11.1.5",
+    "vue-konva": "^3.4.0",
     "vue-router": "^4.5.1",
     "vue3-seamless-scroll": "2.0.1"
   },
